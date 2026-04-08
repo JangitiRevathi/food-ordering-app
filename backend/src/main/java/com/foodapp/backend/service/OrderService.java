@@ -20,4 +20,8 @@ public class OrderService {
     public List<FoodOrder> getOrdersByUser(Long userId) {
         return orderRepository.findByUserId(userId);
     }
+
+    public List<FoodOrder> getAllOrders() {
+        return orderRepository.findAll();
+    }
 }
